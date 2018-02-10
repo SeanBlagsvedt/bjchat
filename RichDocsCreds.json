@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "babarichdocs",
+  "private_key_id": "50165174d770a31345fa33c9022f55d4780b3d88",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC7U93EcXw8toUC\nuH2+dI7o95AQvMiX8cNo69UFQFcHo3yC2pzXCvU5usJYkAWEF4SSrm31SeJXToX8\nPmvY5dc5HVDv84PcPHT3l1iHrebn++iSJ7+GS5p0HfOKXMWdtv2o5b7VPL1lQ/kE\nftOpn/U6ICTh1AWIbUtqLx6vT3P3pfI85wUFl863UXpvSqzqB7Lbk/0/SHDrxSsM\n4WDJ1Q4uK2+cpRjckqE1VHhg0mYR9WeQahT3F6VemZ1xbSgLUxYpK6tdznA0mCDf\ncopqE5f/HrGNFuaVoCjfKf4A8qYm+9ebxuYziu2EOMYeE80w8UDk3R2d2qYm9wTx\n3IpEorqpAgMBAAECggEBALnrHqsdRwSq0ZBFsucXn86wBZfXBe9nz12O0jkIBlha\ndfUZK5hyE7hcFw72wcK75KP/4roTvkSQdoJHIZp/YwAYjH/Z3AD1L9GbsA3ZFtcf\nOU/1iyyqVHzyTQgB01AYkeDTRHc2dXLP55ICneg4DZbG2FQZrfQdJUAZzAaKgLpD\nkSuxkwOo645Tgl2VIIkCBO0X6z8Y7MKmTjoHmj1cphSyiDpJtyuMHlDLrpBylJLH\nuE/JTGzYBLxx1j5aPKB23vbV09EKF+Sit26BU9rzSbJIeO0PxKuugq8QgepPsd5O\nOKr9470DMMBNijAPqza3Urs2ngaIWz2JPrbgxuN8UFECgYEA68eQOdzkEadH/No7\nxJzym8HjdG16YuFQzQ/kXy82QujAb6WArb1GWF1Fk2HiUJ7p7SObO+IduK4xxfhx\nvHhEdszdGD+A3am5PnhgfBey0Ay+p3TfFG33u33BwjwZViOUCvRbk4KoKya4dcJb\nGjVIrZ7OALrXmTRXFQu8LTBwaJsCgYEAy2SPzgT3H1mv+Njdu60vO2ha39oNvJJO\nZCBzVL1uz5xplE9sI4Bjl8bXz8YFjbDF0XSQJFuBBsILKqyyVB9In2att1EBGqW3\n31wABUzC18MzNLibX8BWrefXaHPoJFV1Z9RvR5CZyFmCWcg7Yt9Pjr7R2ekkc12Q\n+ucm18O4dAsCgYARsXobPX5H7Nu0F9RgXr69/YDKHeUPQoVDviuPEQXrY3f9aNgN\nMaTzwJwWAURwdFxtlTxy8/bzAu9tQcWXNRc+KwV0al+LQs9J5tKmvUiH4Ez2WAjd\niZsLkNZXcxcbpbPYVpoAqc9g3Zj+DUW048a+cKpY16ySLKFUTPskEPx+fQKBgBb0\nDlaNsOXU1UscDknzzXTC3h6NGSfCyx35m4pgpnS/jhqyq92Fy7eBNTG5gz7uSCTP\nJsUznmgI1gHG44kizqtOhyQ8/Abp1MpcM5RliUeYO9sjSkWQCzgtBd4/1l7jVhCV\npMlKxFAb6d3//tO1p+DQIBabfQWX9ZibJYMMD3DpAoGBAJCk+6Afi7q2tMzv7oAJ\n/7IqSbIKYdhuPOZdDz1unaqDKvsEIejn8K5mWRF2Ga+96pdS9C+E3vu7crbucNT9\nXKlYpjqH23mrTqKWCQhl6xwCpdrqy9lQ3Hlm6EciNdSOjM68RXw5QVF9/lcj1r/W\nygnUqaZqKskNq3SYncc2bOwa\n-----END PRIVATE KEY-----\n",
+  "client_email": "ocrphotos@babarichdocs.iam.gserviceaccount.com",
+  "client_id": "111747215326020811004",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ocrphotos%40babarichdocs.iam.gserviceaccount.com"
+}

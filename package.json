@@ -1,0 +1,23 @@
+{
+  "name": "jaya",
+  "version": "1.0.0",
+  "description": "Babajob's default chat bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Babajob Services Pvt Ltd",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.1",
+    "botbuilder": "^3.6.0", 
+    "fb": "^1.1.1",
+    "firebase": "^3.3.2",
+    "form-data": "^2.1.2",
+    "google-libphonenumber": "^2.0.4",
+    "google-spreadsheet": "^2.0.3",
+    "request": "^2.75.0",
+    "restify": "^4.3.0",
+    "string": "^3.3.1"
+  }
+}

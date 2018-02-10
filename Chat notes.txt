@@ -1,0 +1,369 @@
+Next Steps for Chat:
+
+Bugs:
+Parse free text...
+ - hook up intents...
+
+Save RichDocs, WorldBank and Voice Clip data. 
+ 
+Add in WorldBank Qs
+Job as Cards
+
+
+Add in ability to see profile as button
+Add RichDoc question for Drivers... -> Save in correct attribute
+
+On new login, overwrite the city and category to the newest one from the profile...
+
+Reconfirm change mobile if one is present...
+
+8. Check for AboutMe, RichDoc, Qs and Update.
+Add in screening Qs 
+
+Do you consider yourself an ontime person?
+1. Very ontime
+3. Somewhat ontime
+5. Not Very OnTime
+
+
+Message: 
+{ 
+  attachments:
+   [ { contentType: 'image/png',
+       contentUrl: 'https://scontent.xx.fbcdn.net/v/t39.1997-6/851557_369239266556155_759568595_n.png?_nc_ad=z-m&oh=85e24066ebe64f04d457b242e22e7054&oe=5939B5DC' } ],
+  entities: [],
+
+  sourceEvent:
+   { sender: { id: '1131223263663184' },
+     recipient: { id: '329350380762721' },
+     timestamp: 1487315531808,
+     message:
+      { mid: 'mid.1487315531808:5f8908b922',
+        seq: 24869,
+        attachments:
+         [ { type: 'image',
+             payload:
+              { url: 'https://scontent.xx.fbcdn.net/v/t39.1997-6/851557_369239266556155_759568595_n.png?_nc_ad=z-m&oh=85e24066ebe64f04d457b242e22e7054&oe=5939B5DC',
+                sticker_id: 369239263222822 } } ],
+                sticker_id: 369239263222822 } },
+
+  text: '',
+  
+
+Message: 
+{ 
+  attachments:
+   [ { contentType: 'image/jpeg',
+       contentUrl: 'https://scontent.xx.fbcdn.net/v/t35.0-12/16810895_10154770782206084_1386161428_o.jpg?_nc_ad=z-m&oh=b38ca4f82131a76fdef1d32b89df2b29&oe=58A87A67' } ],
+  entities: [],
+  sourceEvent:
+   { sender: { id: '1131223263663184' },
+     recipient: { id: '329350380762721' },
+     timestamp: 1487315600332,
+     message:
+      { mid: 'mid.1487315600332:4ea168fb39',
+        seq: 24871,
+        attachments:
+         [ { type: 'image',
+             payload: { url: 'https://scontent.xx.fbcdn.net/v/t35.0-12/16810895_10154770782206084_1386161428_o.jpg?_nc_ad=z-m&oh=b38ca4f82131a76fdef1d32b89df2b29&oe=58A87A67' } } ] } },
+  text: '',
+
+
+
+
+
+  AboutMe, Verification, Experience (key), Location (key)
+
+Show Job as set of cards:
+
+
+If no category or City, post login, ask it. 
+If text (rather than a number) is given mobile, don't re-show as text. 
+* Ship
+
+Add in better universal parser. 
+Checkon incoming message...
+Parse on city Match
+Look for jobs or job for action. 
+Regex on 6 digit pincode
+If Fresher -> Set experience to zero. 
+
+
+Link to App
+Link to Discussion Area. 
+Think about what the incoming sms with password is going to be. Last hour digits of mobile number?
+
+2. Check on name match before number association...
+2.01 Disassociate FB on delete in chat?
+Enable review before application is sent...
+                                
+2.1. Finish the piece.
+
+
+
+
+
+
+--Add Getting StartEmployerProfile
+curl -X POST -H "Content-Type: application/json" -d '{
+  "setting_type":"call_to_actions",
+  "thread_state":"new_thread",
+  "call_to_actions":[
+    {
+      "payload":"USER_DEFINED_PAYLOAD"
+    }
+  ]
+}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=PAGE_ACCESS_TOKEN"      
+
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "setting_type":"greeting",
+  "greeting":{
+    "text":"Timeless apparel for the masses."
+  }
+}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=PAGE_ACCESS_TOKEN"    
+
+---
+
+4. Add in screening Qs
+5. My Jobs
+6. Natural Lanuage
+
+
+---
+
+
+0. Check FB Info
+1. First see if anyone we have matches the FB ID
+2. If so, load their info in the chat -> Save Token -> LoadBJProfile > CheckAndSaveFBId > AskQsOrMenu -> EnsureProfile
+
+----------------
+3. If not
+Hi Sean, Add ID Proof and get a better job.
+Favorite Language
+Seeker or Employer
+
+
+What's your Mobile? Ask Mobile
+ -> If exists, Save Token -> LoadBJProfile -> CheckAndSaveFBId -> AskQsOrMenu -> EnsureProfile
+ -> If not exists -> Create User -> CheckAndSaveFBId -> AskQsOrMenu -> EnsureProfile
+
+If not verified, ask for OTP (include resend)
+
+Functions:
+function checkForExisitingFBIdOnBabajob
+function UpdateBabajobProfile(attributeId, value)
+function AssociateFBtoBabajobUser (FBID,userId, Token)
+
+function SetProfileFromBabajobUser(user);
+
+Intepret 4 digit as global command to OTP set
+load in FB info and set on profile.
+
+
+Done:
+function AskQsOrMenu
+
+
+4. If fbID not found and not on Babajob, Employer or Seeker. 
+5. Ask Seeker Qs
+6. Ask Mobile
+7. Create user on babajob and Save FB. 
+
+
+
+1. First see if anyone we have matches the ID
+2. If so, load their info in the chat ->
+3. If not, Ask if on Babajob. Yes -> Mobile -> Load.
+4. If fbID not found and not on Babajob, Employer or Seeker. 
+5. Ask Seeker Qs
+6. Ask Mobile
+7. Create user on babajob and Save FB. 
+
+Work: 
+1. Do lookup on Babajob
+2. Create user after mobile added (then save FB ID)
+
+Add in Praveen's lookup by FB
+Store FB userid in Babajob after mobile association (check for rough name match)
+
+
+Remove Apply
+Enable Adding preferred Salary
+
+Get RichDocs Working:
+* Save the Hint
+* Save by FB ID?
+* Enable Viewer
+
+Enable embeddable Web Control - hmmm...
+
+Later
+Save attribute fields
+Make a permanent Array so Apply works. 
+
+Make the View Profile
+Add in Maps for Location
+Fix RichDocs by UserID
+Make Apply Work
+
+After approval:
+Save additional FB
+Send a selfie as better picture
+Hook up notifications
+
+
+Narrative: We enable seekers to upload their key documents
+* Enable Delete (need to delete in by-userid as well)
+* Enable us to send a link to a seeker 
+  - We read userid and show earlier matching docs
+* Enable post against the userid and save
+* Pass in the name in URL
+* Change firstName + lastName to Name and attempt to match
+-- SHIP -- LOCAL DONE
+
+More testing with more docs...
+
+Narrative: Seekers are encouraged to add RichDocs
+* Add link to mobile web, seeker home, app
+-- SHIP -- 
+
+Narrative: We show the document link on person and candidates page. 
+* Display without upload if no edit param - DONE
+* Create new FB user object that displays key docs, type + Summary. 
+* Figure out how to query it for a BJ Userid 
+* Render RichDoc summary as widget. 
+-- SHIP -- 
+
+Narrative: Enable Hints
+* Add in URL params of what additional docs we want
+ (look at what's there and then remove options to add)
+* Enable hint in API - Payslip, Driver's license, Aadhaar, Voter, PAN, Insurance
+* Make reco better with hints
+http://localhost:3001/api/richdocs/-KUMB8b_0IAlVMwwpOra
+
+Narrative: Upload voice clips. 
+
+Raw Notes:
+
+
+If No Profile Data:
+Language
+	Already on babajob?
+		Ask for Mobile
+		Get Data and fill out defaults 
+		-> Menu (it will decide based on role)
+			
+	
+	if Not, Seeker or employer
+		StartSeekerProfile
+			EnsureProfile
+				?Name
+				?Gender
+				?Education
+				?Category
+				?location
+				EnsureMobile
+					?mobile -> On Answer, Call API
+					?mobileVerify - On OTP get, Call Verify. Else enable "I called".
+		StartEmployerProfile
+			EnsureEmployerProfile
+				?Name
+				?Company
+				?Category
+				?location
+				EnsureMobile
+					?mobile -> On Answer, Call API
+					?mobileVerify - On OTP get, Call Verify. Else enable "I called".
+
+If Old
+	If Seeker - > Menu.
+	If Employer -> Encourage Delete
+
+
+
+Screening Qs after apply:
+- Question 1 of 4: Do you own your own car?
+- Do you have a commercial license?
+- Take a picture of your lisense
+- Take a picture of your Aadhaar number
+- Mobile + OTP
+- English
+- This job requires a moderate amount of English. So you'll need to send us a voice chat of you speaking a sentence in English. Please.
+Hello. I'm hard working and trustworthy and would love to work for you. 
+
+"I'm now analyzing what you said". 
+Great. You spoke that sentence well. 
+
+- Make instruction pictures
+
+Great You've passed! Here's the employers number so you can call them
+
+Menu:
+http://unicode.org/emoji/charts/full-emoji-list.html#1f612
+https://www.emojibase.com/emoji/2699/gear
+
+       session.send("🔍 Search Jobs|⭐ My Jobs|💼 Edit Profile|⚙ Settings");
+
+\uFFFF
+\UFFFFFFFF
+
+//star U+2B50	- apply
+//heart U+2764	- Apply 
+//gear - U+2699	
+//magnify - U+1F50D	
+//BELL U+1F514	
+//speech bubble - 	U+1F5E8	
+//double star - for analyzing - 	U+1F4AB	
+//scooter - U+1F6F5	
+//car - U+1F697	
+//fire - U+1F525	hot jobs?
+//lightbulb - U+1F4A1	idea
+//envelope - U+2709	send application
+//pencil - U+270F	edit profile?
+//briefcase - U+1F4BC	Edit Profile
+//round pushpin - 	U+1F4CD	- possible for location
+
+Add Options to jobs
+* Add Salary, Experience, More Jobs
+
+
+Add in new logo
+Emojis!
+- Questions UX, Send Application, Show Number
+- Deploy, RichDocs/
+
+
+Ask screening Qs
+- Take a picture of the your ID
+- tell us your mobile number + OTP
+- Finish Questions and allow review
+- Send over employer number
+
+Look at JobBot
+
+Are you an employer or job seeker?
+
+
+- store in FB?
+- hook up to real jobs. 
+
+
+
+/src/assets/dist - where client side distributed assets live 
+/dist/
+
+babajob.com/dist/js/bundled.js
+babajob.com/dist/css/
+	bootstrap.min.cs
+	babajob-style.cs
+	sprites.cs
+babajob.com/dist/image/
+babajob.com/dist/fonts/
+
+
+http://api.babajob.com/v1/search/jobposts?gender=Male&lat=12.967773&lng=77.60234&categories=1,0&from=0&size=5
+
+http://api.babajob.com/v1/search/jobposts?gender=Male&lat=12.967773&lng=77.60234&categories=1,0&from=0&size=5&sortBy=createdOn
+
+{"jobPosts":[{"_index":"jobposts","_type":"jobpost","_id":"5827584c2bb4487d84a2dbd2","_score":null,"_source":{"createdOn":"2016-11-12T17:58:37.445+0000","JobCategory":{"id":1},"employerName":"Cauvery ","title":"Home Maid","CurrentSalary":8000,"address":{"location":{"lon":77.6068,"lat":12.966215},"sublocality_level_2":null,"sublocality_level_1":"Richmond Town","sublocality_level_3":null},"description":"Candidate should be within 25years of age,should be willing to do all top up work play and handle my kids .also help in cooking","validUntil":"2017-02-10T00:00:00.000+0000","companyName":null,"jobPostId":"5827584c2bb4487d84a2dbd2"},"sort":[0.513879419830944,8000]},{"_index":"jobposts","_type":"jobpost","_id":"580f080453e2ef08a24e88d1","_score":null,"_source":{"createdOn":"2016-10-25T07:21:41.072+0000","JobType":[{"value":"Full time"}],"JobCategory":{"id":0},"employerName":"Vishank ","title":"Driver","CurrentSalary":11000,"address":{"location":{"lon":77.6068,"lat":12.966215},"sublocality_level_2":null,"sublocality_level_1":"","sublocality_level_3":null},"description":"Looking for a driver at Bangalore, with an experience.","validUntil":"2017-01-23T07:21:40.377+0000","companyName":"Vishank","jobPostId":"580f080453e2ef08a24e88d1"},"sort":[0.513879419830944,11000]},{"_index":"jobposts","_type":"jobpost","_id":"582939142bb4487d84a2dc0f","_score":null,"_source":{"createdOn":"2016-11-14T04:09:56.974+0000","JobCategory":{"id":0},"employerName":"Arjun Punchappady","title":"Driver","CurrentSalary":12000,"address":{"location":{"lon":77.6068,"lat":12.966215},"sublocality_level_2":null,"sublocality_level_1":"Richmond Town","sublocality_level_3":null},"description":"Looking for Driver for automatic car.","validUntil":"2017-02-12T00:00:00.000+0000","companyName":null,"jobPostId":"582939142bb4487d84a2dc0f"},"sort":[0.513879419830944,12000]},{"_index":"jobposts","_type":"jobpost","_id":"57f21696ffa431557c42100d","_score":null,"_source":{"createdOn":"2016-10-03T08:28:07.311+0000","JobCategory":{"id":0},"employerName":"Ranjith Kumar","title":"Driver","CurrentSalary":14000,"address":{"location":{"lon":77.6068,"lat":12.966215},"sublocality_level_2":null,"sublocality_level_1":null,"sublocality_level_3":null},"description":"Looking for driver","ProfilePic":{"value":"Required"},"validUntil":"2017-01-01T00:00:00.000+0000","companyName":"TRAVEL 9 CAB RENTALS INDIA","jobPostId":"57f21696ffa431557c42100d"},"sort":[0.513879419830944,14000]},{"_index":"jobposts","_type":"jobpost","_id":"57e36abfb89d3a325ca7c583","_score":null,"_source":{"createdOn":"2016-09-22T05:23:12.161+0000","JobCategory":{"id":0},"title":"Driver","employerName":"Dipjyoti ","CurrentSalary":15000,"address":{"location":{"lon":77.6068,"lat":12.966215},"sublocality_level_2":null,"sublocality_level_1":null,"sublocality_level_3":null},"description":"Need Driver","validUntil":"2016-12-21T00:00:00.000+0000","jobPostId":"57e36abfb89d3a325ca7c583"},"sort":[0.513879419830944,15000]}],"totalCount":727}
