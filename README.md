@@ -1,6 +1,6 @@
 # chat
 Repo for Chat experiences ala Messenger
-
+This repro leverages MSFT LUIS and the facebook messenger APIs to enable job seekers to see and apply for jobs on babajob.com. 
 
 # Install
 Install node.js and npm from nodejs Version 6+
